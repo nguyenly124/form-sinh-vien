@@ -1,4 +1,4 @@
-﻿namespace form_sinhvien
+namespace form_sinhvien
 {
     partial class Form1
     {
@@ -32,15 +32,12 @@
             buttonthem = new Button();
             buttonsua = new Button();
             buttonxoa = new Button();
-            buttonlammoi = new Button();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            label4 = new Label();
             textmasv = new TextBox();
             texttensv = new TextBox();
             textlop = new TextBox();
-            textdiem = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -53,11 +50,11 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(986, 365);
             dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // buttonthem
             // 
-            buttonthem.Location = new Point(392, 635);
+            buttonthem.Location = new Point(114, 614);
             buttonthem.Name = "buttonthem";
             buttonthem.Size = new Size(94, 29);
             buttonthem.TabIndex = 1;
@@ -67,7 +64,7 @@
             // 
             // buttonsua
             // 
-            buttonsua.Location = new Point(589, 635);
+            buttonsua.Location = new Point(409, 614);
             buttonsua.Name = "buttonsua";
             buttonsua.Size = new Size(94, 29);
             buttonsua.TabIndex = 2;
@@ -77,21 +74,13 @@
             // 
             // buttonxoa
             // 
-            buttonxoa.Location = new Point(763, 635);
+            buttonxoa.Location = new Point(674, 614);
             buttonxoa.Name = "buttonxoa";
             buttonxoa.Size = new Size(94, 29);
             buttonxoa.TabIndex = 3;
             buttonxoa.Text = "Xóa ";
             buttonxoa.UseVisualStyleBackColor = true;
-            // 
-            // buttonlammoi
-            // 
-            buttonlammoi.Location = new Point(182, 635);
-            buttonlammoi.Name = "buttonlammoi";
-            buttonlammoi.Size = new Size(94, 29);
-            buttonlammoi.TabIndex = 4;
-            buttonlammoi.Text = "Làm mới ";
-            buttonlammoi.UseVisualStyleBackColor = true;
+            buttonxoa.Click += buttonxoa_Click;
             // 
             // label1
             // 
@@ -114,20 +103,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(496, 441);
+            label3.Location = new Point(544, 441);
             label3.Name = "label3";
             label3.Size = new Size(38, 20);
             label3.TabIndex = 7;
             label3.Text = "Lớp ";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(496, 523);
-            label4.Name = "label4";
-            label4.Size = new Size(108, 20);
-            label4.TabIndex = 8;
-            label4.Text = "Điểm tổng kết ";
             // 
             // textmasv
             // 
@@ -150,27 +130,17 @@
             textlop.Size = new Size(261, 27);
             textlop.TabIndex = 11;
             // 
-            // textdiem
-            // 
-            textdiem.Location = new Point(619, 517);
-            textdiem.Name = "textdiem";
-            textdiem.Size = new Size(261, 27);
-            textdiem.TabIndex = 12;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1022, 685);
-            Controls.Add(textdiem);
             Controls.Add(textlop);
             Controls.Add(texttensv);
             Controls.Add(textmasv);
-            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(buttonlammoi);
             Controls.Add(buttonxoa);
             Controls.Add(buttonsua);
             Controls.Add(buttonthem);
@@ -187,14 +157,11 @@
         private Button buttonthem;
         private Button buttonsua;
         private Button buttonxoa;
-        private Button buttonlammoi;
         private Label label1;
         private Label label2;
         private Label label3;
-        private Label label4;
         private TextBox textmasv;
         private TextBox texttensv;
         private TextBox textlop;
-        private TextBox textdiem;
     }
 }
